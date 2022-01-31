@@ -1,0 +1,13 @@
+{
+  "name": "arma-eventicons",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "ligscrib ./svg/* -o ./out -n arma-eventicons -e"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@neoskop/ligscrib": "^2.0.0"
+  }
+}
