@@ -8,13 +8,17 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'npm'
     - name: Install dependencies
       run: npm ci
     - name: Build font
       run: npm run build
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
-        name: font
+        name: arma-eventicons
         path: ./out
