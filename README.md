@@ -43,6 +43,7 @@ The following icons are custom made for arma.events:
 - `grip`
 - `reorder`
 - `text`
+- `plus_small`
 
 
 
