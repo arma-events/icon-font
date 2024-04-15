@@ -1,13 +1,28 @@
 {
-  "name": "arma-eventicons",
-  "version": "0.0.1",
-  "description": "",
+  "name": "@arma-events/icon-font",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Custom icon font for arma.events and related projects using font ligatures and based on Lucide Icons.",
+  "homepage": "https://github.com/arma-events/icon-font#readme",
+  "bugs": {
+    "url": "https://github.com/arma-events/icon-font/issues"
+  },
   "scripts": {
-    "build": "ligscrib ./svg/* -o ./out -n arma-eventicons -e"
+    "build": "ligscrib ./svg/* -o ./dist -t woff,woff2 -n icon-font --no-css && cp ./index.scss ./dist/index.scss && sass ./dist/index.scss ./dist/index.css",
+    "build:example": "ligscrib ./svg/* -o ./out -n icon-font -e"
   },
   "keywords": [],
-  "author": "",
-  "dependencies": {
-    "@neoskop/ligscrib": "^2.0.0"
+  "author": "Jonas Schade <derzade@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arma-events/icon-font.git"
+  },
+  "devDependencies": {
+    "@neoskop/ligscrib": "^2.0.0",
+    "sass": "^1.75.0"
   }
 }

@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Build font
-      run: npm run build
+      run: npm run build:example
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:

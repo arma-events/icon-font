@@ -12,4 +12,4 @@ To add a new icon simply add the SVG in the `./svg/` subdirectory. The filename 
 
 To build the font, `npm` and Node.js is required. Simply install all dependencies (run `npm ci`) and then run `npm run build` in the root directory of this repository.
 
-The output directory (`./out/`) includes an `example.html`-file, which can be used to check whether all icons are rendered correctly.
+You can also use `npm run build:example`. This will create an output directory (`./out/`) including an `example.html`-file, which can be used to check whether all icons are rendered correctly.
