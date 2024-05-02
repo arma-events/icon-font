@@ -1,17 +1,29 @@
 $base-path: '@arma-events/icon-font/dist' !default;
 $class: 'arma-eventicons' !default;
 $font-family: 'arma.events Icon Font' !default;
+$font-family-fallback: 'arma.events Icon Font Fallback' !default;
+
+// this fallback font is to make sure icons are invisible (size = 0%)
+// while the webfont is still loading, to make sure the text is not visible
+@font-face {
+  font-family: $font-family-fallback;
+  src: local('Arial');
+  size-adjust: 0%;
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: $font-family;
   src: url('#{$base-path}/icon-font.woff2') format('woff2'), url('#{$base-path}/icon-font.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @mixin styles() {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: $font-family !important;
+  font-family: $font-family, $font-family-fallback !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

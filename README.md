@@ -39,7 +39,8 @@ This package also includes a SCSS file which allows some configuration and can b
   $base-path: '@arma-events/icon-font/dist',
   // set $class to '' to disable a generation of the css class selector
   $class: 'arma-eventicons',
-  $font-family: 'arma.events Icon Font'
+  $font-family: 'arma.events Icon Font',
+  $font-family-fallback: 'arma.events Icon Font Fallback' !default
 );
 
 // use the styles-mixin to include the relevant
