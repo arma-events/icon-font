@@ -72,3 +72,4 @@ The following icons are custom made for arma.events:
 - `text`
 - `plus_small`
 - `calendar_dashed`
+- `slotlist`
