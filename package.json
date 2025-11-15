@@ -24,5 +24,8 @@
   "devDependencies": {
     "@neoskop/ligscrib": "^2.0.0",
     "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "lucide": "^0.553.0"
   }
 }
