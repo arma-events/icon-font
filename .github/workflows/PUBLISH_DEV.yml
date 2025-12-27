@@ -30,4 +30,4 @@ jobs:
           UNIX_SECONDS=$(date +%s)
           npm --no-git-tag-version version ${{ steps.version.outputs.current-version }}-dev-${UNIX_SECONDS}
           npm run build
-          npm publish
+          npm publish --tag latest
