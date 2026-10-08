@@ -1,6 +1,6 @@
 {
   "name": "@arma-events/icon-font",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "type": "module",
   "description": "Custom icon font for arma.events and related projects using font ligatures and based on Lucide Icons.",
   "homepage": "https://github.com/arma-events/icon-font#readme",
