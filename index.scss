@@ -15,7 +15,9 @@ $font-family-fallback: 'arma.events Icon Font Fallback' !default;
 
 @font-face {
   font-family: $font-family;
-  src: url('#{$base-path}/icon-font.woff2') format('woff2'), url('#{$base-path}/icon-font.woff') format('woff');
+  src:
+    url('#{$base-path}/icon-font.woff2') format('woff2'),
+    url('#{$base-path}/icon-font.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

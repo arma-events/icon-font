@@ -61,6 +61,7 @@ The following icons are from [Simple Icons](https://github.com/simple-icons/simp
 - `youtube`
 
 The following icon is from [SVG Repo](https://www.svgrepo.com):
+
 - `steam`
 
 The following icons are custom made for arma.events:

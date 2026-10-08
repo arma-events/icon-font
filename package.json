@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "ligscrib ./svg/* -o ./dist -t woff,woff2 -n icon-font --no-css && cp ./index.scss ./dist/index.scss && sass ./dist/index.scss ./dist/index.css",
-    "build:example": "ligscrib ./svg/* -o ./out -n icon-font -e"
+    "build:example": "ligscrib ./svg/* -o ./out -n icon-font -e",
+    "fmt": "prettier --write ."
   },
   "keywords": [],
   "author": "Jonas Schade <derzade@gmail.com>",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@neoskop/ligscrib": "^2.0.0",
+    "prettier": "^3.9.9",
     "sass": "^1.75.0"
   },
   "dependencies": {
